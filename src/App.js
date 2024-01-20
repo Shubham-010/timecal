@@ -16,6 +16,7 @@ function App() {
   console.log("test")
 
 
+
   function calFun() {
     debugger
     
@@ -30,16 +31,7 @@ function App() {
     let Mins1 = Number(newTime2[1]);
     let REStime = 0;
     let REStimeMin = 0;
-    // let Hours = Number(newTime1[0]);
-    // let Hours1 = newTime2[0];
-    // let Mins = Number(newTime1[1]);
-    // let Mins1 = newTime2[1];
-    // let seconds = 0;
 
-    // let TotalSecond = (Hours * 3600) + (Mins * 60) + seconds;
-    // let TotalSecond1 = (Hours1 * 3600) + (Mins1 * 60) + seconds;
-    
-    // let Totalmaxsec = TotalSecond + TotalSecond1;
 
 
     //? ----------HOURS--------------
@@ -81,50 +73,28 @@ function App() {
     if (Mins < Mins1) {
       REStimeMin = Mins1 - Mins;
     }
-    // if (Mins > 12 && Mins1 > 12) {
-    //   if (Mins > Mins1) {
-    //     REStimeMin = Mins - Mins1;
-    //   } else {
-    //     REStimeMin = Mins1 - Mins;
-    //   }
-    // }
-    // if (Mins < 12 && Mins1 < 12) {
-    //   if (Mins > Mins1) {
-    //     REStimeMin = Mins - Mins1;
-    //   } else {
-    //     REStimeMin = Mins1 - Mins;
-    //   }
-    // }
+   
 
     //? -------------------------------
 
-    // let TH = Math.floor(Totalmaxsec/3600);
-    
-    // let reSeconds = Totalmaxsec % 3600;
-    // let TM = Math.floor(reSeconds/3600);
     let TM = REStimeMin;
-    // let reSeconds1 = Totalmaxsec % 60;
-    // let REStime = 24 - TH;
+
     let OG = REStime;
     let formatTime = `${OG}:${TM}`;
     console.log('formatTime :>> ', formatTime); 
     setresTime(formatTime);
     if(OG > 9){
-      setDisplay("Lets GO ☺ !!!");
+      setDisplay("Lets GO 🐆 !!!");
       setIsExploding(true);
     }
     else if(OG < 9){
-      setDisplay("RUko jara sabar karo ◄►");
+      setDisplay("Ruko jara sabar karo ◄►");
     }
     else{
       setDisplay("Perfect !!")
       setIsExploding(true);
     }
-  
-    let res;
-    console.log('intime :>> ', intime);
-    console.log('outtime :>> ', outtime);
-    console.log('res :>> ', res);
+
   }
 
 
